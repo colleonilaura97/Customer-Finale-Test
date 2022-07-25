@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="french_short_name" label="French Short Name" language="en" table="x_845651_orderfina_country">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>french_short_name</element>
+            <help/>
+            <hint/>
+            <label>French Short Name</label>
+            <language>en</language>
+            <name>x_845651_orderfina_country</name>
+            <plural>French Short Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-07-25 12:32:49</sys_created_on>
+            <sys_id>b93e9e57073011103277fd908c1ed074</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>French Short Name</sys_name>
+            <sys_package display_value="OrderFinalTest" source="x_845651_orderfina">427d9617073011103277fd908c1ed068</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="OrderFinalTest">427d9617073011103277fd908c1ed068</sys_scope>
+            <sys_update_name>sys_documentation_x_845651_orderfina_country_french_short_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-07-25 12:32:49</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
