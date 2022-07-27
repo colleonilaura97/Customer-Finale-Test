@@ -8,35 +8,35 @@
         <hint/>
         <homepage/>
         <image/>
-        <link_type>SEPARATOR</link_type>
+        <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>Country</mobile_title>
+        <mobile_title>Product</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name/>
-        <order>1</order>
+        <name>x_845651_orderfina_product</name>
+        <order/>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
         <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-07-25 12:33:57</sys_created_on>
+        <sys_created_on>2022-07-25 16:04:45</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>e27e9297073011103277fd908c1ed0af</sys_id>
+        <sys_id>c09e479707f011103277fd908c1ed027</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Country</sys_name>
+        <sys_name>Product</sys_name>
         <sys_overrides/>
         <sys_package display_value="OrderFinalTest" source="x_845651_orderfina">427d9617073011103277fd908c1ed068</sys_package>
         <sys_policy/>
         <sys_scope display_value="OrderFinalTest">427d9617073011103277fd908c1ed068</sys_scope>
-        <sys_update_name>sys_app_module_e27e9297073011103277fd908c1ed0af</sys_update_name>
+        <sys_update_name>sys_app_module_c09e479707f011103277fd908c1ed027</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-25 12:33:57</sys_updated_on>
+        <sys_updated_on>2022-07-25 16:04:45</sys_updated_on>
         <timeline_page/>
-        <title>Country</title>
+        <title>Product</title>
         <uncancelable>false</uncancelable>
-        <view_name/>
+        <view_name>Product</view_name>
         <window_name/>
     </sys_app_module>
 </record_update>

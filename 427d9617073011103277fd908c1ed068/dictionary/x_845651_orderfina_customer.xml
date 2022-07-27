@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Customer " max_length="40" name="x_845651_orderfina_customer" sizeclass="0" type="collection">
+        <element label="Email" max_length="100" name="email" type="string"/>
+        <element label="List of customers addresses" max_length="32" name="list_of_customers_addresses" reference="x_845651_orderfina_address" type="reference"/>
+        <element label="List of order-lines" max_length="4000" name="list_of_order_lines" reference="x_845651_orderfina_oer_line" type="reference"/>
+        <element label="Name" max_length="50" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Surname" max_length="50" name="surname" type="string"/>
+        <element label="User Reference" max_length="32" name="user_reference" reference="x_845651_orderfina_country" type="reference"/>
+        <index name="index">
+            <element name="list_of_customers_addresses"/>
+        </index>
+        <index name="index2">
+            <element name="user_reference"/>
+        </index>
+    </element>
+</database>

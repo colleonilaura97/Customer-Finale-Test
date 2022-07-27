@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application>Virtual Agent</application>
+        <code/>
+        <commented_message/>
+        <key>https://static1.unieuro.it/medias/sys_master/root/h1b/h76/33561687064606/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-70ccd96dd592e91f47b068cce43c0e6d-preview-sgmconversionbaseformat-sgmproductformat.jpg</key>
+        <language>en</language>
+        <message>https://static1.unieuro.it/medias/sys_master/root/h1b/h76/33561687064606/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-70ccd96dd592e91f47b068cce43c0e6d-preview-sgmConversionBaseFormat-sgmProductFormat.jpg</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-27 09:13:16</sys_created_on>
+        <sys_id>1ab38cc007c191103277fd908c1ed0ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>https://static1.unieuro.it/medias/sys_master/root/h1b/h76/33561687064606/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-70ccd96dd592e91f47b068cce43c0e6d-preview-sgmconversionbaseformat-sgmproductformat.jpg</sys_name>
+        <sys_package display_value="OrderFinalTest" source="x_845651_orderfina">427d9617073011103277fd908c1ed068</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OrderFinalTest">427d9617073011103277fd908c1ed068</sys_scope>
+        <sys_update_name>sys_ui_message_1ab38cc007c191103277fd908c1ed0ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-27 09:13:16</sys_updated_on>
+    </sys_ui_message>
+</record_update>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Order" max_length="40" name="x_845651_orderfina_order" sizeclass="3" type="collection">
+        <element label="Address" max_length="100" name="address" type="string"/>
+        <element label="Customer" max_length="50" name="customer" type="string"/>
+        <element label="Final Price" max_length="40" name="final_price" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="approved" value="3"/>
+                <element inactive_on_update="false" label="in-progress" value="1"/>
+                <element inactive_on_update="false" label="rejected" value="4"/>
+                <element inactive_on_update="false" label="requested" value="2"/>
+            </choice>
+        </element>
+    </element>
+</database>

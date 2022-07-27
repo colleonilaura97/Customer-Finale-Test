@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="DELETE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category>b5c933e3073451103277fd908c1ed093</category>
+        <channels/>
+        <connect_queue/>
+        <description>it allows users to order products for customers</description>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.39",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "bf6dfb88cd414b919c955c862b2c8de2": {
+          "id": "bf6dfb88cd414b919c955c862b2c8de2",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Goodmorning, what can I do for you?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "1e33ffba2439461f8cfc990ac77ecf0f": {
+          "id": "1e33ffba2439461f8cfc990ac77ecf0f",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "d27c7953de2e4a6ab163d9f13f60b21c": {
+          "id": "d27c7953de2e4a6ab163d9f13f60b21c",
+          "stepType": "Prompt",
+          "name": "Search Catalogue Item",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "What are you looking for?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "mode": "script",
+            "value": ""
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "13a8abd0ee494c6cbbefeb22ba390023",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "a57c593e745244019d9290dff2dbf4cb",
+          "edgeType": "Edge",
+          "source": "d27c7953de2e4a6ab163d9f13f60b21c",
+          "target": "1e33ffba2439461f8cfc990ac77ecf0f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "97e6cea6ffa94088afc2b35eb7a6f7a4",
+          "edgeType": "Edge",
+          "source": "bf6dfb88cd414b919c955c862b2c8de2",
+          "target": "d27c7953de2e4a6ab163d9f13f60b21c",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "6631392f1fdf4c1885eba703ad8ebbc3": {
+      "id": "6631392f1fdf4c1885eba703ad8ebbc3",
+      "name": "LiveAgent_application",
+      "value": {
+        "mode": "simple",
+        "value": null
+      },
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "13a8abd0ee494c6cbbefeb22ba390023": {
+      "id": "13a8abd0ee494c6cbbefeb22ba390023",
+      "name": "search_catalogue_item",
+      "label": "Search Catalogue Item",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTY1ODg0Mzc3NTY5OSBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
+    }
+  }
+}</graph>
+        <key_phrases>OrderForCustomer,SubmitOrder,OrderProducts</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>OrderForCustomer</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-26 13:54:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>de8afbe3073451103277fd908c1ed071</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>OrderForCustomer</sys_name>
+        <sys_package display_value="OrderFinalTest" source="x_845651_orderfina">427d9617073011103277fd908c1ed068</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OrderFinalTest">427d9617073011103277fd908c1ed068</sys_scope>
+        <sys_update_name>sys_cb_topic_de8afbe3073451103277fd908c1ed071</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-26 14:14:13</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="DELETE" query="document_key=de8afbe3073451103277fd908c1ed071"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="OrderFinalTest">427d9617073011103277fd908c1ed068</application>
+        <file_path/>
+        <instance_id>55317b69db85e7044c1ff70fbf9619e3</instance_id>
+        <instance_name>dev72991</instance_name>
+        <name>sys_cb_topic_de8afbe3073451103277fd908c1ed071</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic"><sys_cb_topic action="INSERT_OR_UPDATE"><applicability/><applicability_mode>query</applicability_mode><autopilot_topic>false</autopilot_topic><category>b5c933e3073451103277fd908c1ed093</category><channels/><connect_queue/><description>it allows users to order products for customers</description><expose_on_palette>false</expose_on_palette><flexible_conversation_switching>false</flexible_conversation_switching><graph>{
+  "graph_api_version": "1.0.39",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "bf6dfb88cd414b919c955c862b2c8de2": {
+          "id": "bf6dfb88cd414b919c955c862b2c8de2",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Goodmorning, what can I do for you?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "1e33ffba2439461f8cfc990ac77ecf0f": {
+          "id": "1e33ffba2439461f8cfc990ac77ecf0f",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "d27c7953de2e4a6ab163d9f13f60b21c": {
+          "id": "d27c7953de2e4a6ab163d9f13f60b21c",
+          "stepType": "Prompt",
+          "name": "Search Catalogue Item",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "What are you looking for?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "mode": "script",
+            "value": ""
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "13a8abd0ee494c6cbbefeb22ba390023",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "a57c593e745244019d9290dff2dbf4cb",
+          "edgeType": "Edge",
+          "source": "d27c7953de2e4a6ab163d9f13f60b21c",
+          "target": "1e33ffba2439461f8cfc990ac77ecf0f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "97e6cea6ffa94088afc2b35eb7a6f7a4",
+          "edgeType": "Edge",
+          "source": "bf6dfb88cd414b919c955c862b2c8de2",
+          "target": "d27c7953de2e4a6ab163d9f13f60b21c",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "6631392f1fdf4c1885eba703ad8ebbc3": {
+      "id": "6631392f1fdf4c1885eba703ad8ebbc3",
+      "name": "LiveAgent_application",
+      "value": {
+        "mode": "simple",
+        "value": null
+      },
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "13a8abd0ee494c6cbbefeb22ba390023": {
+      "id": "13a8abd0ee494c6cbbefeb22ba390023",
+      "name": "search_catalogue_item",
+      "label": "Search Catalogue Item",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTY1ODg0Mzc3NTY5OSBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
+    }
+  }
+}</graph><key_phrases>OrderForCustomer,SubmitOrder,OrderProducts</key_phrases><library>false</library><live_agent>false</live_agent><name>OrderForCustomer</name><nlu_intent/><nlu_intent_label/><nlu_model/><nlu_model_label/><nlu_provider/><palette_label/><roles/><secure_custom_input_control>false</secure_custom_input_control><source_topic_id/><sys_class_name>sys_cb_topic</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-07-26 13:54:40</sys_created_on><sys_domain>global</sys_domain><sys_id>de8afbe3073451103277fd908c1ed071</sys_id><sys_mod_count>6</sys_mod_count><sys_name>OrderForCustomer</sys_name><sys_package display_value="OrderFinalTest" source="x_845651_orderfina">427d9617073011103277fd908c1ed068</sys_package><sys_policy/><sys_scope display_value="OrderFinalTest">427d9617073011103277fd908c1ed068</sys_scope><sys_update_name>sys_cb_topic_de8afbe3073451103277fd908c1ed071</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-07-26 14:14:13</sys_updated_on><triggerable_by_notification>false</triggerable_by_notification><type>STANDARD</type><variables/></sys_cb_topic><sys_variable_value action="delete_multiple" query="document_key=de8afbe3073451103277fd908c1ed071"/></record_update>]]></payload>
+        <payload_hash>1650761912</payload_hash>
+        <record_name>OrderForCustomer</record_name>
+        <reverted_from/>
+        <source>26516a97073011103277fd908c1ed0e2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-26 14:14:13</sys_created_on>
+        <sys_id>c90f7f67073451103277fd908c1ed049</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1823adbb6bc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-26 14:14:13</sys_updated_on>
+        <type>Topic</type>
+        <update_guid>c10f7f67d0345110d6787bc3e99ed849</update_guid>
+        <update_guid_history>c10f7f67d0345110d6787bc3e99ed849:1650761912,8fcc7f67f9345110e7ac441c37e76044:818686625,9b3c77678e3451100e194e44e611c863:211819798,182cf367a3345110e197cc161ee461b1:-1512917400,18abffa31a345110094c731accc1357c:-2135659336,924bffa3d5345110a2cccba494737c78:-2125745829,a68afbe357345110479ab57ae7843488:1195031166</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-26 14:16:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_cb_topic">sys_cb_topic</sys_db_object>
+        <sys_id>6d33c94821fb4a849dbe9d8fe7ffbf10</sys_id>
+        <sys_metadata>de8afbe3073451103277fd908c1ed071</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OrderForCustomer</sys_name>
+        <sys_package display_value="OrderFinalTest" source="x_845651_orderfina">427d9617073011103277fd908c1ed068</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="OrderFinalTest">427d9617073011103277fd908c1ed068</sys_scope>
+        <sys_scope_delete display_value="">74b840cc0a124c84925ced3382971ae1</sys_scope_delete>
+        <sys_update_name>sys_cb_topic_de8afbe3073451103277fd908c1ed071</sys_update_name>
+        <sys_update_version display_value="sys_cb_topic_de8afbe3073451103277fd908c1ed071">c90f7f67073451103277fd908c1ed049</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-26 14:16:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
